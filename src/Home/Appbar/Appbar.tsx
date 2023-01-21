@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Buttons from './Buttons';
 import LinksAnchor from './LinksAnchor';
 import useMediaQuery from '../../Hooks/useMediaQuery';
+import { IoClose, IoLogoReddit } from 'react-icons/io5';
+import { AiOutlineMenu } from "react-icons/ai";
 
 type props = {
   Links: any[];
@@ -43,7 +45,7 @@ const Appbar = ({ isTopOfPage, Links, selectedpage, setselectedpage }: props) =>
           <div className='flex justify-end p-12'>
             <button onClick={() => setOpen(!open)}>
               <span className='text-3xl text-white'>
-                <ion-icon name='close'></ion-icon>
+                <IoClose/>
               </span>
             </button>
           </div>
@@ -70,13 +72,13 @@ const Appbar = ({ isTopOfPage, Links, selectedpage, setselectedpage }: props) =>
       <div className='md:flex items-center justify-between py-4 md:px-10 px-7'>
         <div className='font-bold text-2xl cursor-pointer flex items-center font-[poppins] text-white'>
           <span className='text-3xl text-indigo-600 mr-1 pt-2'>
-            <ion-icon name="logo-reddit"></ion-icon>
+            <IoLogoReddit/>
           </span>
           NFT-Collector
         </div>
         <div onClick={() => setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
           <span className='text-3xl text-white'>
-            <ion-icon name='menu'></ion-icon>
+            <AiOutlineMenu/>
           </span>
         </div>
         <ul className='flex items-center md:pb-0 pb-12 static z-[-1] left-0 w-auto pl-9'>

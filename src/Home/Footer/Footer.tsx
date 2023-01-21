@@ -1,5 +1,8 @@
 import React from 'react'
 import useMediaQuery from '../../Hooks/useMediaQuery';
+import { IoLogoReddit } from 'react-icons/io5';
+import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai';
+import { FaDiscord} from "react-icons/fa";
 
 const Footer = () => {
     const isAboveMediumScreen = useMediaQuery('(min-width: 768px)');
@@ -10,7 +13,7 @@ const Footer = () => {
                 <div className='flex items-center justify-between mt-10 mb-10'>
                     <div className='font-bold text-2xl cursor-pointer flex items-center font-[poppins] text-white'>
                         <span className='text-3xl text-indigo-600 mr-1 pt-2'>
-                            <ion-icon name="logo-reddit"></ion-icon>
+                            <IoLogoReddit/>
                         </span>
                         NFT-Collector
                     </div>
@@ -18,9 +21,9 @@ const Footer = () => {
                         Join our discord
                     </button>
                     <div className='text-3xl text-white flex items-center justify-evenly mt-5'>
-                        <ion-icon name='logo-twitter'></ion-icon>
-                        <ion-icon name='logo-discord'></ion-icon>
-                        <ion-icon name='logo-instagram'></ion-icon>
+                        <AiOutlineTwitter/>
+                        <FaDiscord/>
+                        <AiOutlineInstagram/>
                     </div>
                 </div>
                 <div className='text-white font-semibold text-center pb-2'>
@@ -35,7 +38,7 @@ const Footer = () => {
             <div className='flex items-center justify-between mt-10 mb-10'>
                 <div className='font-bold text-xl cursor-pointer flex items-center font-[poppins] text-white'>
                     <span className='text-xl text-indigo-600 mr-1 pt-2'>
-                        <ion-icon name="logo-reddit"></ion-icon>
+                      <IoLogoReddit/>
                     </span>
                     NFT-Collector
                 </div>
@@ -45,9 +48,9 @@ const Footer = () => {
                 </button>
                  </div>
                 <div className='text-xl text-white flex items-center justify-evenly mt-5'>
-                    <ion-icon name='logo-twitter'></ion-icon>
-                    <ion-icon name='logo-discord'></ion-icon>
-                    <ion-icon name='logo-instagram'></ion-icon>
+                        <AiOutlineTwitter/>
+                        <FaDiscord/>
+                        <AiOutlineInstagram/>
                 </div>
             </div>
             <div className='text-white font-semibold text-center pb-2'>

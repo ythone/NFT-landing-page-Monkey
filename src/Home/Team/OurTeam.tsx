@@ -1,5 +1,6 @@
 import React from 'react'
 import CardsItem from './CardsItem';
+import { IoLogoReddit } from 'react-icons/io5';
 
 
 type props = {
@@ -11,19 +12,19 @@ const OurTeam = ({ setselectedpage }: props) => {
 
     const cardcontent: Array<any> = [
         {
-          icon:<ion-icon name="logo-reddit"></ion-icon>,
+          icon:<IoLogoReddit/>,
           title: "Ronda Ruth",
           description:
             "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
         },
         {
-          icon:<ion-icon name="logo-reddit"></ion-icon>,
+          icon:<IoLogoReddit/>,
           title: "Adam Chicka",
           description:
             "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
         },
         {
-          icon:<ion-icon name="logo-reddit"></ion-icon>,
+          icon:<IoLogoReddit/>,
           title: "Tobey Garfand",
           description:
             "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
